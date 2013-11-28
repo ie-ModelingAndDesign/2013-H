@@ -46,7 +46,7 @@
 	<key>Creator</key>
 	<string>Hiromi TANAKA</string>
 	<key>DisplayScale</key>
-	<string>1 0/72 in = 1 0/72 in</string>
+	<string>1 0/72 in = 1.0000 in</string>
 	<key>GraphDocumentVersion</key>
 	<integer>8</integer>
 	<key>GraphicsList</key>
@@ -90,16 +90,16 @@
 			<key>Head</key>
 			<dict>
 				<key>ID</key>
-				<integer>97</integer>
+				<integer>107</integer>
 			</dict>
 			<key>ID</key>
 			<integer>109</integer>
 			<key>Points</key>
 			<array>
-				<string>{369.18403065656162, 267}</string>
-				<string>{370, 316}</string>
-				<string>{448, 316}</string>
-				<string>{447.79896903781673, 355.00000666355959}</string>
+				<string>{447.80459765380806, 355.00000823739896}</string>
+				<string>{448, 321}</string>
+				<string>{349.25, 320}</string>
+				<string>{348.82661277204903, 267.49998373408425}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -112,6 +112,11 @@
 					<key>TailArrow</key>
 					<string>0</string>
 				</dict>
+			</dict>
+			<key>Tail</key>
+			<dict>
+				<key>ID</key>
+				<integer>97</integer>
 			</dict>
 		</dict>
 		<dict>
@@ -220,8 +225,8 @@
 			<integer>103</integer>
 			<key>Points</key>
 			<array>
-				<string>{210.7385375977729, 267.49999997442109}</string>
-				<string>{210.71649451576027, 355.00000312750194}</string>
+				<string>{210.75001546334758, 267.5}</string>
+				<string>{210.75001546334758, 355}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -2013,7 +2018,7 @@ ios\'96\'7b\'91\'cc\'82\'c9\'83\'66\'81\'5b\'83\'5e\'82\'f0\'95\'db\'8a\'c7\'82\
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2013-11-27 16:31:38 +0000</string>
+	<string>2013-11-28 01:49:28 +0000</string>
 	<key>Modifier</key>
 	<string>Hiromi TANAKA</string>
 	<key>NotesVisible</key>
@@ -2089,7 +2094,7 @@ ios\'96\'7b\'91\'cc\'82\'c9\'83\'66\'81\'5b\'83\'5e\'82\'f0\'95\'db\'8a\'c7\'82\
 		<key>ExpandedCanvases</key>
 		<array/>
 		<key>Frame</key>
-		<string>{{18, 2}, {759, 1056}}</string>
+		<string>{{295, 0}, {759, 778}}</string>
 		<key>ListView</key>
 		<true/>
 		<key>OutlineWidth</key>
@@ -2103,7 +2108,7 @@ ios\'96\'7b\'91\'cc\'82\'c9\'83\'66\'81\'5b\'83\'5e\'82\'f0\'95\'db\'8a\'c7\'82\
 		<key>SidebarWidth</key>
 		<integer>120</integer>
 		<key>VisibleRegion</key>
-		<string>{{-33, -67}, {624, 917}}</string>
+		<string>{{-25, 0}, {610, 639}}</string>
 		<key>Zoom</key>
 		<real>1</real>
 		<key>ZoomValues</key>
