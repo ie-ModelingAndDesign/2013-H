@@ -14,9 +14,12 @@
 
 @implementation ViewController
 
+//appを起動した際に行う作業
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //startInputにyesを代入する
+    startInput   = YES;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -29,40 +32,42 @@
 - (IBAction)button:(id)sender {
     
     UIButton *b = (UIButton *)sender;
-	
+    
+	//1回目の入力
 	if( startInput ){
-		// 最初の1桁目が0なら表示しない
-		if( b.tag == 0 ) return;
+        //少数点ボタンが押された時
         if( b.tag == 10){
-            self.label.text = [NSString stringWithFormat:@"0."];
+            label.text = [NSString stringWithFormat:@"0."];
+        //新しく表示する文字列を作成
         }else{
-            // 新しく表示する文字列を作成
-            self.label.text = [NSString stringWithFormat:@"%d", b.tag];
-            
+            label.text = [NSString stringWithFormat:@"%d", b.tag];
         }
 		startInput =  NO;
+   //1回目以降の入力
 	} else {
+        //少数点ボタンが押された時
         if( b.tag == 10){
-            NSRange searchResult = [self.label.text rangeOfString:@"."];
+            NSRange searchResult = [label.text rangeOfString:@"."];
             if(searchResult.location == NSNotFound){
-                self.label.text =[NSString stringWithFormat:@"%@%@",self.label.text,@"."];
+                label.text =[NSString stringWithFormat:@"%@%@",label.text,@"."];
             }
+        //すでに表示している文字列に連結する
         }else{
-		// すでに表示されている文字列に連結
-		self.label.text = [NSString stringWithFormat:@"%@%d", self.label.text, b.tag];
+		label.text = [NSString stringWithFormat:@"%@%d", label.text, b.tag];
         }
     
     }
 }
 
-
+//表示している文字列をクリアする
 - (IBAction)clearButton:(id)sender {
-    self.label.text = @"0";
+    label.text = @"0";
     startInput = YES;
 }
 
 - (IBAction)enter:(id)sender {
     
+    /*日付を使うための準備*/
     // NsDate => NSString変換用のフォーマッタを作成
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
     [df setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]]; // Localeの指定
@@ -72,20 +77,21 @@
     NSDate *now = [NSDate date];
     NSString *strNow = [df stringFromDate:now];
     
-    NSString *save = self.label.text;
+    /*データの保存(保存するもの:save,インデックス:strNow)*/
+    NSString *save = label.text;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:save forKey:strNow];
+    
+    //成功時出力
     BOOL successful = [defaults synchronize];
     if (successful) {
         NSLog(@"%@", @"データの保存に成功しました。");
     }
-
-    
-//    self.label2.text = self.label.text;
 }
 
 - (IBAction)result:(id)sender {
     
+    /*日付を使うための準備*/
     // NsDate => NSString変換用のフォーマッタを作成
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
     [df setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]]; // Localeの指定
@@ -95,12 +101,11 @@
     NSDate *now = [NSDate date];
     NSString *strNow = [df stringFromDate:now];
     
+    /*データの取り出し(取り出したデータ保存先:save,インデックス:strNow)*/
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *save = [defaults stringForKey:strNow];
-
-            self.label2.text = [NSString stringWithFormat:@"%@", save];
-    
-      //  NSLog(@"%@", @"データが存在しません。");
+    //取り出したデータを保存
+    label2.text = [NSString stringWithFormat:@"%@", save];
     
 }
 
