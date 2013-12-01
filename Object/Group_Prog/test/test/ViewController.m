@@ -18,11 +18,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    label.text = @"0";
     //startInputにyesを代入する
     startInput = YES;
     //Weightにyesを代入する
     Input = YES;
+    //countを初期化する。
+    count = 0;
     
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -36,10 +37,7 @@
 - (IBAction)button:(id)sender {
     
     UIButton *b = (UIButton *)sender;
-    
-    //999kg以内の時
-    if(Input){
-    
+
 	//1回目の入力
 	if(startInput){
         //少数点ボタンが押された時
@@ -57,46 +55,37 @@
             NSRange searchResult = [label.text rangeOfString:@"."];
             if(searchResult.location == NSNotFound){
                 label.text =[NSString stringWithFormat:@"%@%@",label.text,@"."];
-                //小数第2位まで表示(countセット)
+                
+                //countの初期化
                 count = 0;
+                //3桁以上の小数入力対策
+                Input = YES;
             }
             
-        //すでに表示している文字列に連結する
         }else{
-         
-        //labelの文字列をfloat型に変換
-        //float weight =  [label.text floatValue];
-            //labelの文字列が999以上ならば、入力拒否する
-            //if(weight > 999.99){
-              //  Input = NO;
-        //    }
+            if(Input){
+                
+                //すでに表示している文字列に連結する
+                label.text = [NSString stringWithFormat:@"%@%d", label.text, b.tag];
             
-
-		label.text = [NSString stringWithFormat:@"%@%d", label.text, b.tag];
-            
-            //小数第2位まで表示
+            //3回(2回+startInput)までの入力を許可
             count++;
             if(count == 2){
                 Input = NO;
             }
-            
-        float weight =  [label.text floatValue];
-            //labelの文字列が999以上ならば、入力拒否する
-            if(weight > 999.99){
-                Input = NO;
+                 
             }
-
         }
     
-    }
     }
 }
 
 //表示している文字列をクリアする
 - (IBAction)clearButton:(id)sender {
     label.text = @"0";
-    Input = YES;
     startInput = YES;
+    Input = YES;
+    count = 0;
 }
 
 - (IBAction)enter:(id)sender {
@@ -132,12 +121,12 @@
     [df setDateFormat:@"yyyyMMdd"];
     
     // 日付(NSDate) => 文字列(NSString)に変換
-    NSDate *now = [NSDate date];
-    NSString *strNow = [df stringFromDate:now];
+    //NSDate *now = [NSDate date];
+    //NSString *strNow = [df stringFromDate:now];
     
     /*データの取り出し(取り出したデータ保存先:save,インデックス:strNow)*/
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *save = [defaults stringForKey:strNow];
+    NSString *save = [defaults stringForKey:@"20131130"];
     //取り出したデータを保存
     label2.text = [NSString stringWithFormat:@"%@", save];
     
