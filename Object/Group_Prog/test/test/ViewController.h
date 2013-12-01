@@ -9,12 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController{
+    IBOutlet UILabel *label;
+    IBOutlet UILabel *label2;
+
 	BOOL startInput;
 	int currentValue;
 	int operation;
 }
-@property (weak, nonatomic) IBOutlet UILabel *label;
-@property (weak, nonatomic) IBOutlet UILabel *label2;
 
 - (IBAction)button:(id)sender;
 - (IBAction)clearButton:(id)sender;
