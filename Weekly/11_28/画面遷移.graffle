@@ -2018,7 +2018,7 @@ ios\'96\'7b\'91\'cc\'82\'c9\'83\'66\'81\'5b\'83\'5e\'82\'f0\'95\'db\'8a\'c7\'82\
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2013-11-28 01:49:28 +0000</string>
+	<string>2013-12-01 08:08:25 +0000</string>
 	<key>Modifier</key>
 	<string>Hiromi TANAKA</string>
 	<key>NotesVisible</key>
@@ -2076,7 +2076,7 @@ ios\'96\'7b\'91\'cc\'82\'c9\'83\'66\'81\'5b\'83\'5e\'82\'f0\'95\'db\'8a\'c7\'82\
 	<key>RowSpacing</key>
 	<real>36</real>
 	<key>SheetTitle</key>
-	<string>キャンバス 1</string>
+	<string>11/28</string>
 	<key>SmartAlignmentGuidesActive</key>
 	<string>YES</string>
 	<key>SmartDistanceGuidesActive</key>
@@ -2094,7 +2094,7 @@ ios\'96\'7b\'91\'cc\'82\'c9\'83\'66\'81\'5b\'83\'5e\'82\'f0\'95\'db\'8a\'c7\'82\
 		<key>ExpandedCanvases</key>
 		<array/>
 		<key>Frame</key>
-		<string>{{295, 0}, {759, 778}}</string>
+		<string>{{556, 0}, {808, 778}}</string>
 		<key>ListView</key>
 		<true/>
 		<key>OutlineWidth</key>
@@ -2108,13 +2108,13 @@ ios\'96\'7b\'91\'cc\'82\'c9\'83\'66\'81\'5b\'83\'5e\'82\'f0\'95\'db\'8a\'c7\'82\
 		<key>SidebarWidth</key>
 		<integer>120</integer>
 		<key>VisibleRegion</key>
-		<string>{{-25, 0}, {610, 639}}</string>
+		<string>{{-50, 0}, {659, 639}}</string>
 		<key>Zoom</key>
 		<real>1</real>
 		<key>ZoomValues</key>
 		<array>
 			<array>
-				<string>キャンバス 1</string>
+				<string>11/28</string>
 				<real>1</real>
 				<real>1</real>
 			</array>
