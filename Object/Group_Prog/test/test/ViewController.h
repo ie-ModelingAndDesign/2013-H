@@ -11,10 +11,10 @@
 @interface ViewController : UIViewController{
     IBOutlet UILabel *label;
     IBOutlet UILabel *label2;
-
+    int count;
 	BOOL startInput;
-	int currentValue;
-	int operation;
+    BOOL Input;
+
 }
 
 - (IBAction)button:(id)sender;

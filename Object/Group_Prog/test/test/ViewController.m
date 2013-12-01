@@ -18,8 +18,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    label.text = @"0";
     //startInputにyesを代入する
-    startInput   = YES;
+    startInput = YES;
+    //Weightにyesを代入する
+    Input = YES;
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -33,8 +37,11 @@
     
     UIButton *b = (UIButton *)sender;
     
+    //999kg以内の時
+    if(Input){
+    
 	//1回目の入力
-	if( startInput ){
+	if(startInput){
         //少数点ボタンが押された時
         if( b.tag == 10){
             label.text = [NSString stringWithFormat:@"0."];
@@ -50,18 +57,45 @@
             NSRange searchResult = [label.text rangeOfString:@"."];
             if(searchResult.location == NSNotFound){
                 label.text =[NSString stringWithFormat:@"%@%@",label.text,@"."];
+                //小数第2位まで表示(countセット)
+                count = 0;
             }
+            
         //すでに表示している文字列に連結する
         }else{
+         
+        //labelの文字列をfloat型に変換
+        //float weight =  [label.text floatValue];
+            //labelの文字列が999以上ならば、入力拒否する
+            //if(weight > 999.99){
+              //  Input = NO;
+        //    }
+            
+
 		label.text = [NSString stringWithFormat:@"%@%d", label.text, b.tag];
+            
+            //小数第2位まで表示
+            count++;
+            if(count == 2){
+                Input = NO;
+            }
+            
+        float weight =  [label.text floatValue];
+            //labelの文字列が999以上ならば、入力拒否する
+            if(weight > 999.99){
+                Input = NO;
+            }
+
         }
     
+    }
     }
 }
 
 //表示している文字列をクリアする
 - (IBAction)clearButton:(id)sender {
     label.text = @"0";
+    Input = YES;
     startInput = YES;
 }
 
