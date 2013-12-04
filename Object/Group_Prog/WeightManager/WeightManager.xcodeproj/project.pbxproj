@@ -10,6 +10,7 @@
 		27B6F6D2184ED51D00BD402F /* WeightInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B6F6D1184ED51D00BD402F /* WeightInput.m */; };
 		27B6F6D3184ED51D00BD402F /* WeightInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B6F6D1184ED51D00BD402F /* WeightInput.m */; };
 		27B6F6D6184EDBEA00BD402F /* Weightfix.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B6F6D5184EDBEA00BD402F /* Weightfix.m */; };
+		27B6F6D9184EE42100BD402F /* WeightData.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B6F6D8184EE42100BD402F /* WeightData.m */; };
 		738C3297184B2DE0003870E8 /* 2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 738C3296184B2DE0003870E8 /* 2.gif */; };
 		73930615184B2D3F00DC48D3 /* Mokuhyo.m in Sources */ = {isa = PBXBuildFile; fileRef = 73930614184B2D3F00DC48D3 /* Mokuhyo.m */; };
 		73930617184B2D8000DC48D3 /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 73930616184B2D8000DC48D3 /* 1.gif */; };
@@ -44,6 +45,8 @@
 		27B6F6D1184ED51D00BD402F /* WeightInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightInput.m; sourceTree = "<group>"; };
 		27B6F6D4184EDBEA00BD402F /* Weightfix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weightfix.h; sourceTree = "<group>"; };
 		27B6F6D5184EDBEA00BD402F /* Weightfix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weightfix.m; sourceTree = "<group>"; };
+		27B6F6D7184EE42100BD402F /* WeightData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightData.h; sourceTree = "<group>"; };
+		27B6F6D8184EE42100BD402F /* WeightData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightData.m; sourceTree = "<group>"; };
 		738C3296184B2DE0003870E8 /* 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2.gif; sourceTree = "<group>"; };
 		73930613184B2D3F00DC48D3 /* Mokuhyo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mokuhyo.h; sourceTree = "<group>"; };
 		73930614184B2D3F00DC48D3 /* Mokuhyo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mokuhyo.m; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 				73E4446F184B269F00FB2773 /* AppDelegate.h */,
 				73E44470184B269F00FB2773 /* AppDelegate.m */,
 				73E44472184B269F00FB2773 /* Main.storyboard */,
+				27B6F6D7184EE42100BD402F /* WeightData.h */,
+				27B6F6D8184EE42100BD402F /* WeightData.m */,
 				27B6F6D0184ED51D00BD402F /* WeightInput.h */,
 				27B6F6D1184ED51D00BD402F /* WeightInput.m */,
 				27B6F6D4184EDBEA00BD402F /* Weightfix.h */,
@@ -279,6 +284,7 @@
 				27B6F6D2184ED51D00BD402F /* WeightInput.m in Sources */,
 				73E4446D184B269F00FB2773 /* main.m in Sources */,
 				27B6F6D6184EDBEA00BD402F /* Weightfix.m in Sources */,
+				27B6F6D9184EE42100BD402F /* WeightData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
