@@ -1,4 +1,5 @@
 //
+//  目標入力
 //  Mokuhyo.h
 //  WeightManager
 //

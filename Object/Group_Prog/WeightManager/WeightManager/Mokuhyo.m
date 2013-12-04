@@ -1,4 +1,5 @@
 //
+//  目標入力
 //  Mokuhyo.m
 //  WeightManager
 //
@@ -32,7 +33,6 @@
     Input = YES;
     //countを初期化する。
     count = 0;
-	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,6 +41,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+//数字の入力
 - (IBAction)button:(id)sender {
     UIButton *b = (UIButton *)sender;
     
@@ -79,13 +80,11 @@
                 if(count == 2){
                     Input = NO;
                 }
-                
             }
         }
-        
     }
-
 }
+
 //表示している文字列をクリアする
 - (IBAction)clearbutton:(id)sender {
     label.text = @"0";
@@ -95,21 +94,13 @@
 
 }
 
+//データの保存をする
 - (IBAction)enter:(id)sender {
-    /*日付を使うための準備*/
-    // NsDate => NSString変換用のフォーマッタを作成
-    NSDateFormatter *df = [[NSDateFormatter alloc] init];
-    [df setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]]; // Localeの指定
-    [df setDateFormat:@"yyyyMMdd"];
     
-    // 日付(NSDate) => 文字列(NSString)に変換
-    NSDate *now = [NSDate date];
-    NSString *strNow = [df stringFromDate:now];
-    
-    /*データの保存(保存するもの:save,インデックス:strNow)*/
+    /*データの保存(保存するもの:save,インデックス:Mokuhyo)*/
     NSString *save = label.text;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:save forKey:strNow];
+    [defaults setObject:save forKey:@"Mokuhyo"];
     
     //成功時出力
     BOOL successful = [defaults synchronize];

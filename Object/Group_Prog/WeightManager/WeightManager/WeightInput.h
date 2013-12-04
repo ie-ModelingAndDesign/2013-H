@@ -1,4 +1,5 @@
 //
+//　今日の体重
 //  WeightInput.h
 //  WeightManager
 //
@@ -8,6 +9,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WeightInput : UIViewController
+@interface WeightInput : UIViewController{
+    IBOutlet UILabel *label;
+    int count;
+	BOOL startInput;
+    BOOL Input;
+}
+- (IBAction)button:(id)sender;
+- (IBAction)clearButton:(id)sender;
+- (IBAction)enter:(id)sender;
 
 @end
