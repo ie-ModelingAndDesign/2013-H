@@ -342,10 +342,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9p-jC-zei">
-                                <rect key="frame" x="107" y="67" width="183" height="52"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYv-6j-9sZ">
+                                <rect key="frame" x="84" y="81" width="217" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -354,7 +355,7 @@
                     <navigationItem key="navigationItem" title="今日の体重" id="Z6c-Wf-oMm"/>
                     <connections>
                         <outlet property="label" destination="g0t-OM-dia" id="1mG-1h-6lj"/>
-                        <outlet property="label2" destination="O9p-jC-zei" id="hDr-Cl-Plc"/>
+                        <outlet property="label2" destination="mYv-6j-9sZ" id="fef-JM-oGv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ZM-I0-5bW" userLabel="First Responder" sceneMemberID="firstResponder"/>

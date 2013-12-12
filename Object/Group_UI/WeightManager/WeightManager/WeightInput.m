@@ -26,6 +26,17 @@
 
 - (void)viewDidLoad
 {
+    /*日付を使うための準備*/
+    // NsDate => NSString変換用のフォーマッタを作成
+    df = [[NSDateFormatter alloc] init];
+    [df setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]];// Localeの指定
+    
+    // 日付(NSDate) => 文字列(NSString)に変換
+    [df setDateFormat:@"MM月dd日"];
+    NSDate *now = [NSDate date];
+    strNow = [df stringFromDate:now];
+    label2.text =[NSString stringWithFormat:@"%@",strNow ];
+    
     [super viewDidLoad];
     //startInputにyesを代入する
     startInput = YES;
@@ -97,18 +108,12 @@
 //データの保存
 - (IBAction)enter:(id)sender {
     
-    /*日付を使うための準備*/
-    // NsDate => NSString変換用のフォーマッタを作成
-    NSDateFormatter *df = [[NSDateFormatter alloc] init];
-    [df setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]]; // Localeの指定
-    [df setDateFormat:@"yyyyMMdd"];
-    
     // 日付(NSDate) => 文字列(NSString)に変換
+    [df setDateFormat:@"yyyyMMdd"];
     NSDate *now = [NSDate date];
-    NSString *strNow = [df stringFromDate:now];
-    label2.text =[NSString stringWithFormat:@"%@",strNow ];
+    strNow = [df stringFromDate:now];
     
-    /*データの保存(保存するもの:save,インデックス:strNow)*/
+/*データの保存(保存するもの:save,インデックス:strNow)*/
     NSString *save = label.text;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:save forKey:strNow];
