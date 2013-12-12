@@ -53,7 +53,7 @@
 	<array>
 		<dict>
 			<key>Bounds</key>
-			<string>{{416, 7}, {7, 14}}</string>
+			<string>{{389, 7}, {7, 14}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FitText</key>
@@ -161,7 +161,7 @@
 			<array>
 				<string>{344, 26.5}</string>
 				<string>{380, 26.5}</string>
-				<string>{428.50006363506367, 25.726062814334089}</string>
+				<string>{403.50016945815815, 27.111983579639535}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -279,8 +279,8 @@
 			<integer>77</integer>
 			<key>Points</key>
 			<array>
-				<string>{115.44819263340105, 198.54759065402274}</string>
-				<string>{151, 123}</string>
+				<string>{101.43022764795633, 198.56167946864502}</string>
+				<string>{144, 121}</string>
 				<string>{195, 26}</string>
 			</array>
 			<key>Style</key>
@@ -303,7 +303,7 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{241, 188}, {19, 14}}</string>
+			<string>{{195, 188}, {19, 14}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FitText</key>
@@ -351,7 +351,7 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{168, 188}, {7, 14}}</string>
+			<string>{{175, 188}, {7, 14}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FitText</key>
@@ -409,9 +409,9 @@
 			<integer>73</integer>
 			<key>Points</key>
 			<array>
-				<string>{156.5, 208}</string>
+				<string>{168.75, 208}</string>
 				<string>{201, 208}</string>
-				<string>{268.5, 208}</string>
+				<string>{221.25, 208}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -433,11 +433,11 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{367, 194}, {19, 14}}</string>
+			<string>{{345, 194}, {19, 14}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FitText</key>
-			<string>YES</string>
+			<string>Vertical</string>
 			<key>Flow</key>
 			<string>Resize</string>
 			<key>ID</key>
@@ -476,12 +476,10 @@
 				<key>VerticalPad</key>
 				<integer>0</integer>
 			</dict>
-			<key>Wrap</key>
-			<string>NO</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{404, 194}, {19, 14}}</string>
+			<string>{{377, 194}, {19, 14}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FitText</key>
@@ -539,9 +537,9 @@
 			<integer>6</integer>
 			<key>Points</key>
 			<array>
-				<string>{359.49996283523927, 208.55487759555172}</string>
+				<string>{337.74998159273429, 208.49999984199772}</string>
 				<string>{396, 209}</string>
-				<string>{428.50003716163695, 208.60365808339466}</string>
+				<string>{403.50140035244186, 208.43739497356685}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -568,7 +566,7 @@
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{269, 199}, {90, 18}}</string>
+					<string>{{221.75, 199}, {115.5, 18}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -595,7 +593,7 @@
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
 
-\f0\b\fs24 \cf0 \'89\'df\'8b\'8e\'82\'cc\'8b\'4c\'98\'5e}</string>
+\f0\b\fs24 \cf0 ViewController}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -604,7 +602,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{269, 217}, {90, 36}}</string>
+					<string>{{221.75, 217}, {115.5, 18}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -635,8 +633,7 @@
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\ri-380
 
 \f0\fs24 \cf0 \expnd0\expndtw0\kerning0
-+\'93\'fa\'95\'74:int\
-+\'91\'cc\'8f\'64:int}</string>
++}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -645,7 +642,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{269, 253}, {90, 36}}</string>
+					<string>{{221.75, 235}, {115.5, 18}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -676,7 +673,7 @@
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\ri-380
 
 \f0\fs24 \cf0 \expnd0\expndtw0\kerning0
-\'89\'df\'8b\'8e\'82\'cc\'8b\'4c\'98\'5e\'82\'f0\'95\'5c\'8e\'a6\'82\'b7\'82\'e9}</string>
++}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -728,7 +725,7 @@
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
 
-\f0\b\fs24 \cf0 \'96\'da\'95\'57\'91\'cc\'8f\'64\'82\'dc\'82\'c5\'82\'cc\'91\'cc\'8f\'64\'95\'5c\'8e\'a6}</string>
+\f0\b\fs24 \cf0 WeightData}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -737,7 +734,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{195, 38}, {149, 54}}</string>
+					<string>{{195, 38}, {149, 72}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -768,9 +765,10 @@
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\ri-380
 
 \f0\fs24 \cf0 \expnd0\expndtw0\kerning0
-+\'93\'fa\'95\'74:int\
-+\'91\'cc\'8f\'64:int\
-+\'96\'da\'95\'57\'82\'dc\'82\'c5\'82\'cc\'91\'cc\'8f\'64:int}</string>
++now:NSData\
++stNow:NSString\
++*save:NSString\
++*mokuhyou:NSString }</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -779,7 +777,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{195, 92}, {149, 54}}</string>
+					<string>{{195, 110}, {149, 18}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -810,9 +808,7 @@
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\ri-380
 
 \f0\fs24 \cf0 \expnd0\expndtw0\kerning0
-\'8d\'c5\'90\'56\'83\'66\'81\'5b\'83\'5e\'82\'f0\'8e\'9d\'82\'c1\'82\'c4\'82\'ad\'82\'e9\
-\'96\'da\'95\'57\'91\'cc\'8f\'64\'82\'f0\'82\'f0\'8e\'9d\'82\'c1\'82\'c4\'82\'ad\'82\'e9\
-\'96\'da\'95\'57\'82\'dc\'82\'c5\'82\'cc\'91\'cc\'8f\'64\'82\'f0\'8c\'76\'8e\'5a}</string>
++viewDidLoad():void}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -837,7 +833,7 @@
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{429, 199}, {98, 18}}</string>
+					<string>{{404, 194}, {144, 18}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -864,7 +860,7 @@
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
 
-\f0\b\fs24 \cf0 \'89\'df\'8b\'8e\'82\'cc\'8b\'4c\'98\'5e\'95\'d2\'8f\'57}</string>
+\f0\b\fs24 \cf0 Weightfix}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -873,7 +869,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{429, 217}, {98, 36}}</string>
+					<string>{{404, 212}, {144, 36}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -904,8 +900,8 @@
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\ri-380
 
 \f0\fs24 \cf0 \expnd0\expndtw0\kerning0
-+\'93\'fa\'95\'74:int\
-+\'91\'cc\'8f\'64:int}</string>
++*sava:NSString\
+}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -914,7 +910,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{429, 253}, {98, 36}}</string>
+					<string>{{404, 248}, {144, 18}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -945,7 +941,7 @@
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\ri-380
 
 \f0\fs24 \cf0 \expnd0\expndtw0\kerning0
-NSUserDefault()}</string>
++(id)sender():IBAction}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -970,7 +966,7 @@ NSUserDefault()}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{66, 199}, {90, 18}}</string>
+					<string>{{24.25, 199}, {144, 18}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -997,7 +993,7 @@ NSUserDefault()}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
 
-\f0\b\fs24 \cf0 \'8d\'a1\'93\'fa\'82\'cc\'91\'cc\'8f\'64}</string>
+\f0\b\fs24 \cf0 WeightInput}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -1006,7 +1002,7 @@ NSUserDefault()}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{66, 217}, {90, 36}}</string>
+					<string>{{24.25, 217}, {144, 54}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -1037,8 +1033,9 @@ NSUserDefault()}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\ri-380
 
 \f0\fs24 \cf0 \expnd0\expndtw0\kerning0
-+\'93\'fa\'95\'74:int\
-+\'91\'cc\'8f\'64:int}</string>
++*df:NSDataFormatter\
++*now:NSData\
++*strNow:NSString}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -1047,7 +1044,7 @@ NSUserDefault()}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{66, 253}, {90, 36}}</string>
+					<string>{{24.25, 271}, {144, 18}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -1078,7 +1075,7 @@ NSUserDefault()}</string>
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\ri-380
 
 \f0\fs24 \cf0 \expnd0\expndtw0\kerning0
-NSUserDefault()}</string>
++(id)sender():IBAction}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -1103,7 +1100,7 @@ NSUserDefault()}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{429, 16}, {90, 18}}</string>
+					<string>{{404, 20}, {144, 18}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -1130,7 +1127,7 @@ NSUserDefault()}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
 
-\f0\b\fs24 \cf0 \'96\'da\'95\'57\'93\'fc\'97\'cd}</string>
+\f0\b\fs24 \cf0 Mokuhyo}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -1139,7 +1136,7 @@ NSUserDefault()}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{429, 34}, {90, 18}}</string>
+					<string>{{404, 38}, {144, 18}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -1170,7 +1167,7 @@ NSUserDefault()}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\ri-380
 
 \f0\fs24 \cf0 \expnd0\expndtw0\kerning0
-+\'96\'da\'95\'57\'91\'cc\'8f\'64:int}</string>
++*save:NSString}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -1179,7 +1176,7 @@ NSUserDefault()}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{429, 52}, {90, 36}}</string>
+					<string>{{404, 56}, {144, 18}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -1210,7 +1207,7 @@ NSUserDefault()}</string>
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\ri-380
 
 \f0\fs24 \cf0 \expnd0\expndtw0\kerning0
-\'96\'da\'95\'57\'91\'cc\'8f\'64\'82\'cc\'95\'db\'91\'b6()}</string>
++(id)sender():IBAcrion}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -1276,7 +1273,7 @@ NSUserDefault()}</string>
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2013-12-11 09:00:55 +0000</string>
+	<string>2013-12-12 02:40:54 +0000</string>
 	<key>Modifier</key>
 	<string>Yume OOHAMA</string>
 	<key>NotesVisible</key>
@@ -1352,7 +1349,7 @@ NSUserDefault()}</string>
 		<key>ExpandedCanvases</key>
 		<array/>
 		<key>Frame</key>
-		<string>{{-15, 0}, {825, 778}}</string>
+		<string>{{418, -15}, {825, 778}}</string>
 		<key>ListView</key>
 		<true/>
 		<key>OutlineWidth</key>
@@ -1366,7 +1363,7 @@ NSUserDefault()}</string>
 		<key>SidebarWidth</key>
 		<integer>120</integer>
 		<key>VisibleRegion</key>
-		<string>{{-66, 0}, {690, 639}}</string>
+		<string>{{-66, 0}, {690, 623}}</string>
 		<key>Zoom</key>
 		<real>1</real>
 		<key>ZoomValues</key>
