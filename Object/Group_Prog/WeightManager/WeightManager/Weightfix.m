@@ -8,12 +8,16 @@
 //
 
 #import "Weightfix.h"
+#import "AppDelegate.h" // 追加
+#import "WeightData.h"//追加
 
 @interface Weightfix ()
 
 @end
 
 @implementation Weightfix
+
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,8 +29,36 @@
 }
 
 - (void)viewDidLoad
+
 {
+    
     [super viewDidLoad];
+
+    /*値の引き渡しテスト*/
+    int dateaccess;
+    NSString *tmp;
+    
+    //クラス呼び出し
+    WeightData *cc = [[WeightData alloc] init];
+    [cc CallMethod]; // メソッド呼び出し
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate]; // デリゲート呼び出し
+     tmp = appDelegate.DateAccess; // 代入
+     dateaccess = [tmp intValue];
+
+    
+    /*日付表示*/
+    // NsDate => NSString変換用のフォーマッタを作成
+    df = [[NSDateFormatter alloc] init];
+    [df setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]];// Localeの指定
+    
+    // 日付(NSDate) => 文字列(NSString)に変換
+    [df setDateFormat:@"MM月dd日"];
+    date = [NSDate dateWithTimeIntervalSinceNow:-1*dateaccess*24*60*60];
+    NSString *strNow = [df stringFromDate:date];
+    label2.text =[NSString stringWithFormat:@"%@",strNow ];
+    
+    
+    /*入力初期設定*/
     //startInputにyesを代入する
     startInput = YES;
     //Weightにyesを代入する
@@ -95,12 +127,18 @@
     count = 0;
 }
 
-//データの保存(インデックスをどう持ってくるか考える。)
+//データの保存
 - (IBAction)enter:(id)sender {
+    
+    /*鍵作成*/
+     [df setDateFormat:@"yyyyMMdd"];
+     NSString *key = [df stringFromDate:date];
+    
+    
     /*データの保存(保存するもの:save,インデックス:fix_day(仮))*/
     NSString *save = label.text;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:save forKey:@"fix_day"];
+    [defaults setObject:save forKey:key];
     
     //成功時出力
     BOOL successful = [defaults synchronize];

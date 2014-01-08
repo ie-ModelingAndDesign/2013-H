@@ -9,7 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @interface WeightData : UIViewController{
-    IBOutlet UILabel *label1;
-    IBOutlet UILabel *label2;
+    NSDateFormatter *df;
+    IBOutlet UILabel *date1;
+    IBOutlet UILabel *date2;
+    IBOutlet UILabel *weight1;
+    IBOutlet UILabel *weight2;
 }
+- (IBAction)date1:(id)sender;
+- (IBAction)date2:(id)sender;
+
+
+- (void)CallMethod;
+
 @end
