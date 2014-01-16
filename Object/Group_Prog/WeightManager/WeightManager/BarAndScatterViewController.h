@@ -17,7 +17,8 @@
     // グラフ表示領域（この領域に円グラフを追加する）
     CPTGraph *graph;
 
-    __weak IBOutlet UILabel *label;
+    __weak IBOutlet UILabel *comment;
+    __weak IBOutlet UILabel *resultlabel;
 }
 
 // 円グラフで表示するデータを保持する配列

@@ -654,12 +654,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="null" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMf-6U-maM">
+                                <rect key="frame" x="42" y="440" width="237" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.30649763128608254" blue="0.37482145598748484" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="グラフ" id="GVw-uZ-4LU"/>
                     <connections>
-                        <outlet property="label" destination="XGT-aO-fJq" id="xqL-iG-eWF"/>
+                        <outlet property="comment" destination="WMf-6U-maM" id="JiT-aw-uCb"/>
+                        <outlet property="resultlabel" destination="XGT-aO-fJq" id="cio-pV-3J6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5I8-so-Qbo" userLabel="First Responder" sceneMemberID="firstResponder"/>

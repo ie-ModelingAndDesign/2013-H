@@ -123,10 +123,15 @@ NSString *const kData   = @"Data Source Plot";
     int b = [save7 intValue];
     
     int result = b - a;
-    if (result < 0) {
+    if (result <= 0) {
         result = 0;
+        
+        comment.text = [NSString stringWithFormat:@"目標達成！"];
+        
+    }else{
+        comment.text = [NSString stringWithFormat:@"がんばれ！"];
     }
-    label.text = [NSString stringWithFormat:@"%@",[NSString stringWithFormat:@"%d",result]];
+    resultlabel.text = [NSString stringWithFormat:@"%@",[NSString stringWithFormat:@"%d",result]];
     
     // ホスティングビューを生成
     CPTGraphHostingView *hostingView =
