@@ -58,6 +58,15 @@
     label2.text =[NSString stringWithFormat:@"%@",strNow ];
     
     
+    /*初期表示データ*/
+    [df setDateFormat:@"yyyyMMdd"];
+    NSString *before = [df stringFromDate:date];
+    
+    NSUserDefaults *Before = [NSUserDefaults standardUserDefaults];
+    NSString *BeforeData = [Before stringForKey:before];
+    //初期データを表示
+    label.text = [NSString stringWithFormat:@"%@",BeforeData];
+    
     /*入力初期設定*/
     //startInputにyesを代入する
     startInput = YES;

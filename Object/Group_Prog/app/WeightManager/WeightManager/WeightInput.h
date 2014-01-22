@@ -12,6 +12,7 @@
 @interface WeightInput : UIViewController{
     IBOutlet UILabel *label;
     IBOutlet UILabel *label2;
+    NSDate *now;
     NSString *strNow;
     NSDateFormatter *df;
     int count;

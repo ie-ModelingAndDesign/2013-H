@@ -32,11 +32,27 @@
     df = [[NSDateFormatter alloc] init];
     [df setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]];// Localeの指定
     
-        // 日付(NSDate) => 文字列(NSString)に変換
+    // 日付(NSDate) => 文字列(NSString)に変換
+    now = [NSDate date];
+    
     [df setDateFormat:@"MM月dd日"];
-    NSDate *now = [NSDate date];
     strNow = [df stringFromDate:now];
     label2.text =[NSString stringWithFormat:@"%@",strNow ];
+
+    /*以前のデータ表示*/
+    [df setDateFormat:@"yyyyMMdd"];
+    strNow = [df stringFromDate:now];
+    
+    NSUserDefaults *Before = [NSUserDefaults standardUserDefaults];
+    NSString *BeforeData = [Before stringForKey:strNow];
+
+    //以前のデータがないとき
+    if (BeforeData == nil) {
+        BeforeData = @"0";
+    }
+
+    label.text = [NSString stringWithFormat:@"%@",BeforeData];
+    
     
     /*入力初期設定*/
     //startInputにyesを代入する
@@ -113,13 +129,7 @@
 - (IBAction)enter:(id)sender {
     
     /*日付を使うための準備*/
-    // NsDate => NSString変換用のフォーマッタを作成
-    df = [[NSDateFormatter alloc] init];
-    [df setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]]; // Localeの指定
     [df setDateFormat:@"yyyyMMdd"];
-    
-    // 日付(NSDate) => 文字列(NSString)に変換
-    NSDate *now = [NSDate date];
     strNow = [df stringFromDate:now];
     
     /*データの保存(保存するもの:save,インデックス:strNow)*/
