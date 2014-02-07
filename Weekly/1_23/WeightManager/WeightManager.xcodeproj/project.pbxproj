@@ -711,7 +711,7 @@
 				INFOPLIST_FILE = "WeightManager/WeightManager-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/e125753/2013-H/Weekly/1_9/UI/WeightManager/WeightManager/iOS",
+					"/Users/e125721/2013-H/Weekly/1_23/WeightManager/WeightManager/iOS",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -729,7 +729,7 @@
 				INFOPLIST_FILE = "WeightManager/WeightManager-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/e125753/2013-H/Weekly/1_9/UI/WeightManager/WeightManager/iOS",
+					"/Users/e125721/2013-H/Weekly/1_23/WeightManager/WeightManager/iOS",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
