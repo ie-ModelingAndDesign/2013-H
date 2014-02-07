@@ -128,6 +128,7 @@
     int a = [Mokuhyo intValue];
     int b = [save7 intValue];
     
+    
     int result = b - a;
     
     //体重未入力出ない時

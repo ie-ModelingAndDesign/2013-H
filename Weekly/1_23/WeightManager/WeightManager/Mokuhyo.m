@@ -116,6 +116,14 @@
     if (successful) {
         NSLog(@"%@", @"データの保存に成功しました。");
     }
+}
+
+- (IBAction)plus:(id)sender{
+    NSNumber *goal = [NSNumber numberWithInt:0];
+}
+- (IBAction)minus:(id)sender{
+    NSNumber *goal = [NSNumber numberWithInt:1];
 
 }
+
 @end
