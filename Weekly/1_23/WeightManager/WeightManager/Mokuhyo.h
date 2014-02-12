@@ -14,11 +14,9 @@
     int count;
 	BOOL startInput;
     BOOL Input;
-    int goal;//増量減量の分岐に使用
 }
 - (IBAction)button:(id)sender;
 - (IBAction)clearbutton:(id)sender;
 - (IBAction)enter:(id)sender;
-- (IBAction)plus:(id)sender;
-- (IBAction)minus:(id)sender;
+
 @end

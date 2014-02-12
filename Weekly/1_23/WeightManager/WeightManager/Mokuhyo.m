@@ -118,12 +118,5 @@
     }
 }
 
-- (IBAction)plus:(id)sender{
-    NSNumber *goal = [NSNumber numberWithInt:0];
-}
-- (IBAction)minus:(id)sender{
-    NSNumber *goal = [NSNumber numberWithInt:1];
-
-}
 
 @end
